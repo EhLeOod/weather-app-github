@@ -1,0 +1,28 @@
+
+body{background-color: #28A52F;} 
+
+h1 {
+text-align: center;
+color:whitesmoke;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+
+footer {
+	padding: 2em;
+	text-align: center;
+}
+
+ul.side-nav li a{ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul.side-nav li a:hover{ 
+    overflow: visible;
+  }
+
+  .text-center {
+    text-align:center;
+    
+     }
