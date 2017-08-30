@@ -1,5 +1,4 @@
-
-body{background-color: #28A52F;} 
+body{background-color: #000000;} 
 
 h1 {
 text-align: center;
@@ -8,9 +7,26 @@ margin-bottom: 30px;
 margin-top: 30px;
 }
 
+h2 {
+  color: #0EF400
+}
+
+.btn {
+  background-color: #0ef400
+}
+
+p {
+  color: whitesmoke
+}
+
 footer {
 	padding: 2em;
 	text-align: center;
+}
+
+.social-links {
+  color: #0EF400;
+  font-size: 10px;
 }
 
 ul.side-nav li a{ 
