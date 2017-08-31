@@ -1,5 +1,7 @@
 body{background-color: #000000;} 
 
+.text-center {text-align:center;}
+
 h1 {
 text-align: center;
 color:whitesmoke;
@@ -7,38 +9,9 @@ margin-bottom: 30px;
 margin-top: 30px;
 }
 
-h2 {
-  color: #0EF400
-}
+h2 {color: #0EF400}
 
-.btn {
-  background-color: #0ef400
-}
+.btn { background-color: #0ef400}
 
-p {
-  color: whitesmoke
-}
+p {color: whitesmoke}
 
-footer {
-	padding: 2em;
-	text-align: center;
-}
-
-.social-links {
-  color: #0EF400;
-  font-size: 10px;
-}
-
-ul.side-nav li a{ 
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-ul.side-nav li a:hover{ 
-    overflow: visible;
-  }
-
-  .text-center {
-    text-align:center;
-    
-     }
