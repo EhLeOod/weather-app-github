@@ -3,16 +3,16 @@ $(document).ready(function(){
  var lon;
  var weather;
  var temp;
- var tempC ="C";
+ var tempC = "C";
  var tempF = "F";
  var location;
  var api = 'https://fcc-weather-api.glitch.me/api/current?';
  
 getLocation();
 
-    var coords = document.getElementById("coords");
+
 function getLocation() {
-    
+    var coords = document.getElementById("weather");
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         } else { 
@@ -40,22 +40,57 @@ function getWeather(lat, lon) {
         $('#btn').text(temp + tempC);
         location = response.name;
         $('#location').text(location);
+        // convert();
         
         
         }
       });
      }
+    //  var myBool = true;
+    //  $('.like').on('click', function() {
+    //    if (myBool) {
+    //      //function 1 here
+    //    }
+    //    else {
+    //      //function 2 here
+    //    }
+    //    myBool = !myBool;
+    //  });
+    // ||
 
-     $('#btn').click(function() {   
-        var valF = convert();
-        var valC = convertC();
-        // $(this).toggleClass('btn');
-        // return $(this).hasClass('btn') ? like(this,val) : dislike(this,val);
+    // $('.like').on('click', function() {
+    //     if $(this).hasClass("liked") {
+    //       //do unlike
+    //       $(this).removeClass("liked");
+    //     }
+    //     else {
+    //       //do like
+    //       $(this).addClass("liked");
+    //     }
+    //   });
+
+    // function like( el,val ){
+    //     $(el).text(++val);
+    //   }
+      
+    //   function dislike( el,val ){
+    //     $(el).text(--val);
+    //   }
+      
+    //   $('.like').click(function(){
+    //     var val = $(this).text();
+    //     $(this).toggleClass('userLikes');
+    //     return $(this).hasClass('userLikes') ? like(this,val) : dislike(this,val);
+    //   });
+
+    $('#btn').click(function() {   
         
+        $(this).toggleClass('btn');
+        
+        return $(this).hasClass('btn') ? convertC(this) : convert(this);
 
-            
-        }
-      );
+        
+        });
 
       function convert() {
       
@@ -65,7 +100,7 @@ function getWeather(lat, lon) {
 
     function convertC() {
         
-        $('#btn').text(Math.round(temp - 32 / 1.8) + tempC);
+        $('#btn').text(Math.round(temp - 32 / 1.8) + Math.round(32/1.8) + tempC);
     }
 
     
