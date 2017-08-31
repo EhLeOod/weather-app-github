@@ -3,6 +3,8 @@ $(document).ready(function(){
  var lon;
  var weather;
  var temp;
+ var tempC ="C";
+ var tempF = "F";
  var location;
  var api = 'https://fcc-weather-api.glitch.me/api/current?';
  
@@ -34,9 +36,8 @@ function getWeather(lat, lon) {
     success: function(response) {
         weather = response.weather[0].main;
         $('#weather').text(weather);
-        temp = response.main.temp;
-        $('#temp').text(temp + ' c');
-        //what goes here??//
+        temp = Math.round(response.main.temp);
+        $('#temp').text(temp + tempC);
         location = response.name;
         $('#location').text(location);
         
@@ -44,21 +45,27 @@ function getWeather(lat, lon) {
         }
       });
      }
-//start here today.
-//How do you toggle functions?
-//your button IS toggling now, but what is it toggling?
+
      $('#button').on('click', function() {
-        $('#temp').toggle(convertC, convert)
-      });
-//add math.floor or .min or max, etc...
+            convert();
+        }
+      );
+
       function convert() {
-        
-        $('#temp').text(temp * 1.8 + 32 + ' f');
+       if (temp === false) {
+        $('#temp').text(Math.round(temp - 32 / 1.8) + tempC);
+       
+        temp === true;
+       } else {
+        $('#temp').text(Math.round(temp * 1.8 + 32) + tempF);
+        temp === false;
+       }
+       
     }
 //same
     function convertC() {
         
-        $('#temp').text(temp - 32 / 1.8 + ' c');
+        $('#temp').text(Math.round(temp - 32 / 1.8) + tempC);
     }
 
     
