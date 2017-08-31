@@ -40,7 +40,7 @@ function getWeather(lat, lon) {
         $('#btn').text(temp + tempC);
         location = response.name;
         $('#location').text(location);
-        // convert();
+        convert();
         
         
         }
@@ -87,7 +87,7 @@ function getWeather(lat, lon) {
         
         $(this).toggleClass('btn');
         
-        return $(this).hasClass('btn') ? convertC(this) : convert(this);
+        return $(this).hasClass('btn') ? convert(this) : convertC(this);
 
         
         });
@@ -100,7 +100,7 @@ function getWeather(lat, lon) {
 
     function convertC() {
         
-        $('#btn').text(Math.round(temp - 32 / 1.8) + Math.round(32/1.8) + tempC);
+        $('#btn').text(Math.round(temp - 32 / 1.8) +  tempC);
     }
 
     
