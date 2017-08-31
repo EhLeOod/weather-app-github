@@ -37,7 +37,7 @@ function getWeather(lat, lon) {
         weather = response.weather[0].main;
         $('#weather').text(weather);
         temp = Math.round(response.main.temp);
-        $('#temp').text(temp + tempC);
+        $('#btn').text(temp + tempC);
         location = response.name;
         $('#location').text(location);
         
@@ -46,26 +46,26 @@ function getWeather(lat, lon) {
       });
      }
 
-     $('#button').on('click', function() {
-            convert();
+     $('#btn').click(function() {   
+        var valF = convert();
+        var valC = convertC();
+        // $(this).toggleClass('btn');
+        // return $(this).hasClass('btn') ? like(this,val) : dislike(this,val);
+        
+
+            
         }
       );
 
       function convert() {
-       if (temp === false) {
-        $('#temp').text(Math.round(temp - 32 / 1.8) + tempC);
-       
-        temp === true;
-       } else {
-        $('#temp').text(Math.round(temp * 1.8 + 32) + tempF);
-        temp === false;
-       }
+      
+        $('#btn').text(Math.round(temp * 1.8 + 32) + tempF); 
        
     }
-//same
+
     function convertC() {
         
-        $('#temp').text(Math.round(temp - 32 / 1.8) + tempC);
+        $('#btn').text(Math.round(temp - 32 / 1.8) + tempC);
     }
 
     
