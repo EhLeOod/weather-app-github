@@ -42,9 +42,10 @@ function getWeather(lat, lon) {
         $('#btn').text(temp + tempC);
         location = response.name;
         $('#location').text(location);
-        convert();
         icon = response.weather[0].icon;
         $('#icon').html('<img src="' + icon + '"/>');
+        convert();
+        
         
         }
       });
