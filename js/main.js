@@ -50,7 +50,62 @@ function getWeather(lat, lon) {
         }
       });
      }
-    //  var myBool = true;
+ 
+
+    $('#btn').click(function() {   
+        
+        $(this).toggleClass('btn');
+        
+        $(this).hasClass('btn') ? convert(this) : convertC(this);
+
+        
+        });
+
+      function convert() {
+      
+        $('#btn').text(Math.round(temp * 1.8 + 32) + tempF); 
+       
+    }
+
+    function convertC() {
+        
+        $('#btn').text(Math.round(temp - 32 / 1.8) + Math.round(32 / 1.8) +  tempC);
+    }
+
+    
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   //  var myBool = true;
     //  $('.like').on('click', function() {
     //    if (myBool) {
     //      //function 1 here
@@ -86,28 +141,3 @@ function getWeather(lat, lon) {
     //     $(this).toggleClass('userLikes');
     //     return $(this).hasClass('userLikes') ? like(this,val) : dislike(this,val);
     //   });
-
-    $('#btn').click(function() {   
-        
-        $(this).toggleClass('btn');
-        
-        return $(this).hasClass('btn') ? convert(this) : convertC(this);
-
-        
-        });
-
-      function convert() {
-      
-        $('#btn').text(Math.round(temp * 1.8 + 32) + tempF); 
-       
-    }
-
-    function convertC() {
-        
-        $('#btn').text(Math.round(temp - 32 / 1.8) + Math.round(32 / 1.8) +  tempC);
-    }
-
-    
-
-});
-

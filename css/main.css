@@ -1,21 +1,67 @@
-body{background-color: #000000;} 
+body{
+    background-image: url('https://wallpapercave.com/wp/qQa5Pd7.jpg');
+    background-size: 100%;
+    font-family: Courier New, Courier, monospace;
+ } 
 
-.text-center {text-align:center;}
+ .title {
+     float: left;
+     padding-right: 15px;
+ }
+
+ .location {
+     float: left;
+     padding-right: 5px;
+     padding-top: 7px;
+    }
+
+.icon {
+     float: left;
+    }
+
+ .temp {
+     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+     float: left;
+     padding-bottom: 100px;
+     
+ }
 
 h1 {
-text-align: center;
-color:whitesmoke;
-margin-bottom: 30px;
-margin-top: 30px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 10px;
+    text-align: center;
+    color:whitesmoke;
 }
 
-h2 {color: #0EF400}
+h2 {
+    color: white;
+    font-size: 10px;
+    float: left;
+}
 
-.btn { background-color: transparent;
+.btn { 
+    background-color: transparent;
     color: whitesmoke;
-    border-color: black;
-    outline-color: black;
+    text-shadow: -1px -1px 0 rgb(44, 249, 1),
+    1px -1px 0 rgb(44, 249, 1),
+    -1px 1px 0 rgb(44, 249, 1),
+    1px 1px 0 rgb(44, 249, 1); 
+    border-color: transparent;
+    outline-color: transparent;
+    font-size: 75px;
+    float: left;
 }
 
-p {color: whitesmoke}
+p {
+    color: whitesmoke;
+    font-family: Courier New, Courier, monospace;
+    font-size: 10px;
+}
 
+
+.weather {
+    font-family: Courier New, Courier, monospace;
+    font-size: 10px;
+    color:whitesmoke;
+    float: left;
+ }
