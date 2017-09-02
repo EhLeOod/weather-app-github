@@ -100,7 +100,7 @@ function getWeather(lat, lon) {
 
     function convertC() {
         
-        $('#btn').text(Math.round(temp - 32 / 1.8) +  tempC);
+        $('#btn').text(Math.round(temp - 32 / 1.8) + Math.round(32 / 1.8) +  tempC);
     }
 
     
