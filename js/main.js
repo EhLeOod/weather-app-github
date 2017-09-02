@@ -6,6 +6,7 @@ $(document).ready(function(){
  var tempC = "C";
  var tempF = "F";
  var location;
+ var icon;
  var api = 'https://fcc-weather-api.glitch.me/api/current?';
  
 getLocation();
@@ -34,6 +35,7 @@ function getWeather(lat, lon) {
     url: url,
     crossDomain: 'true',
     success: function(response) {
+        $('#title').text('FCC Weather App');
         weather = response.weather[0].main;
         $('#weather').text(weather);
         temp = Math.round(response.main.temp);
@@ -41,7 +43,8 @@ function getWeather(lat, lon) {
         location = response.name;
         $('#location').text(location);
         convert();
-        
+        icon = response.weather[0].icon;
+        $('#icon').html('<img src="' + icon + '"/>');
         
         }
       });

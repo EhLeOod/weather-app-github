@@ -11,6 +11,11 @@ margin-top: 30px;
 
 h2 {color: #0EF400}
 
-.btn { background-color: #0ef400}
+.btn { background-color: transparent;
+    color: whitesmoke;
+    border-color: black;
+    outline-color: black;
+}
+
 p {color: whitesmoke}
 
