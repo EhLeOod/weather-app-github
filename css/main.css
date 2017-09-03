@@ -6,7 +6,9 @@ body{
 
  .title {
      float: left;
+     padding-top: 9px;
      padding-right: 15px;
+     padding-left: 20px;
  }
 
  .location {
@@ -16,15 +18,16 @@ body{
     }
 
 .icon {
-     float: left;
-    }
+    padding-right: px;
+}
 
  .temp {
-     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      float: left;
-     padding-bottom: 100px;
+     padding-left: 0px;
+     padding-top: 20px;
      
- }
+}
 
 h1 {
     font-family: Courier New, Courier, monospace;
@@ -33,19 +36,22 @@ h1 {
     color:whitesmoke;
 }
 
-h2 {
-    color: white;
-    font-size: 10px;
-    float: left;
-}
+
 
 .btn { 
     background-color: transparent;
     color: whitesmoke;
-    text-shadow: -1px -1px 0 rgb(44, 249, 1),
-    1px -1px 0 rgb(44, 249, 1),
-    -1px 1px 0 rgb(44, 249, 1),
-    1px 1px 0 rgb(44, 249, 1); 
+    border-color: transparent;
+  
+    outline-color: transparent;
+    font-size: 73px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+}
+
+.nobtn { 
+    background-color: transparent;
+    color: whitesmoke;
     border-color: transparent;
     outline-color: transparent;
     font-size: 75px;
@@ -64,4 +70,7 @@ p {
     font-size: 10px;
     color:whitesmoke;
     float: left;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 20px;
  }

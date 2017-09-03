@@ -54,7 +54,7 @@ function getWeather(lat, lon) {
 
     $('#btn').click(function() {   
         
-        $(this).toggleClass('btn');
+        $(this).toggleClass('btn nobtn');
         
         $(this).hasClass('btn') ? convert(this) : convertC(this);
 
