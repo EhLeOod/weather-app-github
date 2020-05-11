@@ -1,2 +1,2 @@
 # weather-app-github
-Weather app; part of FreeCodeCampCurriculum
+Weather app, default is Fahrenheit; click temperature to change to Celsius; part of FreeCodeCampCurriculum
