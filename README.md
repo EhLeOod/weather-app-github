@@ -1,1 +1,2 @@
-# weather-app-github README will go here
+# weather-app-github
+Weather app; part of FreeCodeCampCurriculum
